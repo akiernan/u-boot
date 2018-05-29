@@ -50,9 +50,6 @@
 
 #define CONFIG_SYS_BAUDRATE_TABLE	{ 9600, 19200, 38400, 57600, \
 					  115200,230400, 460800, 921600 }
-/* auto boot */
-#define CONFIG_PREBOOT
-
 /*
  * For booting Linux, the board info and command line data
  * have to be in the first 8 MB of memory, since this is

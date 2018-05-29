@@ -259,13 +259,6 @@
 	"bootlimit=3\0"							\
 	"altbootcmd=run bootrlk\0"
 
-#define CONFIG_PREBOOT			\
-	"echo Version: $ver; "		\
-	"echo Serial: $serial; "	\
-	"echo MAC: $ethaddr; "		\
-	"echo Product: $product; "	\
-	"gpio c 1; gpio c 2;"
-
 /* additions for new relocation code, must added to all boards */
 #define CONFIG_SYS_SDRAM_BASE		0xc0000000
 /* initial stack pointer in internal SRAM */

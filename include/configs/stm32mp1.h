@@ -10,8 +10,6 @@
 #include <linux/sizes.h>
 #include <asm/arch/stm32.h>
 
-#define CONFIG_PREBOOT
-
 /*
  * Number of clock ticks in 1 sec
  */

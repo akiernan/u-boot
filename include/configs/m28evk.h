@@ -95,7 +95,6 @@
 #define CONFIG_SYS_LOAD_ADDR	CONFIG_LOADADDR
 
 /* Extra Environment */
-#define CONFIG_PREBOOT		"run try_bootscript"
 #define CONFIG_HOSTNAME		"m28evk"
 
 #define CONFIG_EXTRA_ENV_SETTINGS					\

@@ -58,6 +58,4 @@
 	BOOTENV
 #endif
 
-#define CONFIG_PREBOOT
-
 #endif

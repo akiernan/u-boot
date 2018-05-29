@@ -217,6 +217,22 @@ config BOOTCOMMAND
 	  This is the string of commands that will be used as bootcmd and if
 	  AUTOBOOT is set, automatically run.
 
+config USE_PREBOOT
+	bool "Enable preboot"
+	default y if ARCH_SUNXI || TARGET_NITROGEN6X
+	help
+	  When this option is enabled, the existence of the environment
+	  variable "preboot" will be checked immediately before starting
+	  the CONFIG_BOOTDELAY countdown and/or running the auto-boot
+	  command.
+
+config PREBOOT
+	string "preboot value"
+	depends on USE_PREBOOT
+	help
+	  This is the default string of commands that will be used as the
+	  preboot environment variable.
+
 menu "Console"
 
 config MENU

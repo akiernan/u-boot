@@ -449,9 +449,6 @@
 #define CONFIG_MII
 #define CONFIG_LOADS_ECHO
 #define CONFIG_TIMESTAMP
-#define CONFIG_PREBOOT			"echo;" \
-					"echo Type \\\"run nfsboot\\\" " \
-					"to mount root filesystem over NFS;echo"
 #define CONFIG_BOOTCOMMAND		"run boot_cramfs"
 #undef	CONFIG_SYS_LOADS_BAUD_CHANGE
 

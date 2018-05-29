@@ -304,10 +304,6 @@ extern int soft_i2c_gpio_scl;
 #ifdef CONFIG_USB_FUNCTION_MASS_STORAGE
 #endif
 
-#ifdef CONFIG_USB_KEYBOARD
-#define CONFIG_PREBOOT
-#endif
-
 #define CONFIG_MISC_INIT_R
 
 #ifndef CONFIG_SPL_BUILD

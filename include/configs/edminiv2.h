@@ -96,8 +96,6 @@
 #define CONFIG_SYS_MAX_FLASH_SECT	11 /* max num of sects on one chip */
 #define CONFIG_SYS_FLASH_BASE		0xfff80000
 
-/* auto boot */
-
 /*
  * For booting Linux, the board info and command line data
  * have to be in the first 8 MB of memory, since this is

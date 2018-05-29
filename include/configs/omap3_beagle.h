@@ -70,8 +70,6 @@
 /* Environment */
 #define CONFIG_ENV_SIZE                 SZ_128K
 
-#define CONFIG_PREBOOT                  "usb start"
-
 #define MEM_LAYOUT_ENV_SETTINGS \
 	DEFAULT_LINUX_BOOT_ENV
 

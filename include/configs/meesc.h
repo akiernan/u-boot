@@ -41,8 +41,6 @@
 #define CONFIG_CMDLINE_TAG			/* enable passing of ATAGs */
 #define CONFIG_MISC_INIT_R			/* Call misc_init_r */
 
-#define CONFIG_PREBOOT				/* enable preboot variable */
-
 /*
  * Hardware drivers
  */

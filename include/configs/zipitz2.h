@@ -14,7 +14,6 @@
 #define	CONFIG_CPU_PXA27X		1	/* Marvell PXA270 CPU */
 
 #undef	CONFIG_SKIP_LOWLEVEL_INIT
-#define	CONFIG_PREBOOT
 
 /*
  * Environment settings

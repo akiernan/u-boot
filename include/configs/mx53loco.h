@@ -179,7 +179,6 @@
 #endif
 
 /* Framebuffer and LCD */
-#define CONFIG_PREBOOT
 #define CONFIG_VIDEO_IPUV3
 #define CONFIG_VIDEO_BMP_RLE8
 #define CONFIG_SPLASH_SCREEN

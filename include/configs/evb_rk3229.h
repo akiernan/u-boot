@@ -35,8 +35,6 @@
 	"name=persist,size=4M,uuid=${uuid_gpt_persist};" \
 	"name=userdata,size=-,uuid=${uuid_gpt_userdata};\0" \
 
-#define CONFIG_PREBOOT
-
 #define CONFIG_SYS_BOOT_RAMDISK_HIGH
 
 #undef CONFIG_BOOTCOMMAND

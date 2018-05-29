@@ -203,7 +203,6 @@
 
 #define CONFIG_SYS_LOAD_ADDR		(OMAP34XX_SDRC_CS0) /* default load */
 								/* address */
-#define CONFIG_PREBOOT
 
 /*
  * AM3517 has 12 GP timers, they can be driven by the system clock
