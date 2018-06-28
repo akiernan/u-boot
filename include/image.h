@@ -396,7 +396,7 @@ typedef struct bootm_headers {
 #define	BOOTM_STATE_OS_GO	(0x00000400)
 	int		state;
 
-#ifdef CONFIG_LMB
+#ifndef USE_HOSTCC
 	struct lmb	lmb;		/* for memory mgmt */
 #endif
 } bootm_headers_t;

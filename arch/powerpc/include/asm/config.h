@@ -28,7 +28,6 @@
 # endif
 #endif
 
-#define CONFIG_LMB
 #define CONFIG_SYS_BOOT_RAMDISK_HIGH
 
 #ifndef CONFIG_MAX_MEM_MAPPED

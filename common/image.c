@@ -1480,7 +1480,6 @@ int boot_get_kbd(struct lmb *lmb, bd_t **kbd)
 }
 #endif /* CONFIG_SYS_BOOT_GET_KBD */
 
-#ifdef CONFIG_LMB
 int image_setup_linux(bootm_headers_t *images)
 {
 	ulong of_size = images->ft_len;
@@ -1514,5 +1513,4 @@ int image_setup_linux(bootm_headers_t *images)
 
 	return 0;
 }
-#endif /* CONFIG_LMB */
 #endif /* !USE_HOSTCC */

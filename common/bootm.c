@@ -50,7 +50,6 @@ __weak void board_quiesce_devices(void)
 {
 }
 
-#ifdef CONFIG_LMB
 static void boot_start_lmb(bootm_headers_t *images)
 {
 	ulong		mem_start;
@@ -66,10 +65,6 @@ static void boot_start_lmb(bootm_headers_t *images)
 	arch_lmb_reserve(&images->lmb);
 	board_lmb_reserve(&images->lmb);
 }
-#else
-#define lmb_reserve(lmb, base, size)
-static inline void boot_start_lmb(bootm_headers_t *images) { }
-#endif
 
 static int bootm_start(cmd_tbl_t *cmdtp, int flag, int argc,
 		       char * const argv[])
@@ -672,7 +667,7 @@ int do_bootm_states(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[],
 		}
 	}
 #endif
-#if IMAGE_ENABLE_OF_LIBFDT && defined(CONFIG_LMB)
+#if IMAGE_ENABLE_OF_LIBFDT
 	if (!ret && (states & BOOTM_STATE_FDT)) {
 		boot_fdt_add_mem_rsv_regions(&images->lmb, images->ft_addr);
 		ret = boot_relocate_fdt(&images->lmb, &images->ft_addr,

@@ -41,7 +41,6 @@
 /*
  * FDT options
  */
-#define CONFIG_LMB
 
 /*
  * MEMORY ORGANIZATION
