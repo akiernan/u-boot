@@ -214,7 +214,7 @@ int musb_lowlevel_init(struct musb_host_data *host)
 {
 	void *mbase;
 	/* USB spec says it may take up to 1 second for a device to connect */
-	unsigned long timeout = get_timer(0) + 1000;
+	unsigned long timeout = get_timer(0) + CONFIG_USB_MUSB_INIT_TIMEOUT;
 	int ret;
 
 	if (!host->host) {

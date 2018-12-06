@@ -54,6 +54,14 @@ config USB_MUSB_SUNXI
 	Say y here to enable support for the sunxi OTG / DRC USB controller
 	used on almost all sunxi boards.
 
+config USB_MUSB_INIT_TIMEOUT
+	int "Low level initialization timeout"
+	default 1000
+	help
+	  The USB spec says it may take up to 1 second for a device to
+	  connect. Some devices take longer than this to connect, so
+	  you can increase the timeout here. The value here is in ms.
+
 endif
 
 config USB_MUSB_PIO_ONLY
