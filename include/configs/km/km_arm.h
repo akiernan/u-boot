@@ -32,8 +32,6 @@
 /* include common defines/options for all Keymile boards */
 #include "keymile-common.h"
 
-/* SPI NOR Flash default params, used by sf commands */
-
 /* Reserve 4 MB for malloc */
 #define CONFIG_SYS_MALLOC_LEN		(4 * 1024 * 1024)
 
